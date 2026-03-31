@@ -22,6 +22,34 @@ apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
 uptodown-dlurl = "https://youtube.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
 
+[YouTube-Morphe-Catppuccin]
+app-name = "YouTube Catppuccin"
+patches-source = "MorpheApp/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe"
+module-prop-name = "youtube-morphe-catppuccin"
+build-mode = "both"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
+patcher-args = """\
+  -OdarkThemeBackgroundColor=#181825 \
+  """
+
+[YouTube-Morphe-MaterialYou]
+app-name = "YouTube Material You"
+patches-source = "MorpheApp/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe"
+module-prop-name = "youtube-morphe-materialyou"
+build-mode = "both"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube"
+uptodown-dlurl = "https://youtube.en.uptodown.com/android"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.youtube"
+patcher-args = """\
+  -OdarkThemeBackgroundColor=@android:color/system_accent1_800 \
+  """
+
 [Music]
 build-mode = "both"
 arch = "both"
@@ -39,6 +67,36 @@ arch = "both"
 apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
 uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
 archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
+
+[Music-Morphe-Catppuccin]
+app-name = "Music Catppuccin"
+patches-source = "MorpheApp/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe"
+module-prop-name = "music-morphe-catppuccin"
+build-mode = "both"
+arch = "both"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
+uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
+patcher-args = """\
+  -OdarkThemeBackgroundColor=#181825 \
+  """
+
+[Music-Morphe-MaterialYou]
+app-name = "Music Material You"
+patches-source = "MorpheApp/morphe-patches"
+cli-source = "MorpheApp/morphe-cli"
+rv-brand = "Morphe"
+module-prop-name = "music-morphe-materialyou"
+build-mode = "both"
+arch = "both"
+apkmirror-dlurl = "https://www.apkmirror.com/apk/google-inc/youtube-music"
+uptodown-dlurl = "https://youtube-music.en.uptodown.com/android"
+archive-dlurl = "https://archive.org/download/jhc-apks/apks/com.google.android.apps.youtube.music"
+patcher-args = """\
+  -OdarkThemeBackgroundColor=@android:color/system_accent1_800 \
+  """
 
 [Reddit-Morphe]
 app-name = "Reddit"
