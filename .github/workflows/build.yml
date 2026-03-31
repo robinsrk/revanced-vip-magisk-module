@@ -71,6 +71,14 @@ jobs:
           file_glob: true
           overwrite: true
 
+      - name: Delete old releases
+        run: |
+          # Get list of releases, skip first (latest), delete the rest
+          for tag in $(gh release list --json tagName -q '.[1:].tagName'); do
+            echo "Deleting old release: $tag"
+            gh release delete "$tag" --yes || true
+          done
+
       - name: Update changelog and update json
         id: update_config
         run: |
