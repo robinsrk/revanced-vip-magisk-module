@@ -510,6 +510,7 @@ patch_apk() {
 	local cli_name
 	cli_name=$(basename "$cli_jar")
 	if [ "${cli_name::8}" = revanced ]; then cmd+=" -b"; fi
+	if [ "${cli_name::6}" = morphe ]; then cmd+=" -e Hide ads"; fi
 
 	if [ "$OS" = Android ]; then cmd+=" --custom-aapt2-binary='${AAPT2}'"; fi
 	pr "$cmd"
